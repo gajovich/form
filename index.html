@@ -1,56 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-	<title>Form</title>
 	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230103134732">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PROJECT</title>
 </head>
 
 <body>
-	<div class="wrapper">
-		<main class="page">
-			<section class="main-form">
-				<div class="main-form__container">
-					<div class="main-form__body">
-						<div class="main-form__left">
-							<a href="" class="main-form__logo"><img src="img/logo.png" alt="Logo"></a>
-							<p class="main-form__text">
-								Say hello to global food and beverage producers and suppliers, all in one place
-							</p>
-						</div>
-						<div class="main-form__right">
-							<h2 class="main-form__title">
-								Let’s get started <br>with a few simple steps
-							</h2>
-							<form action="#" class="main-form__form form">
-								<label class="form__label" for="email">Email<span> *</span></label>
-								<input class="form__input" id="email" autocomplete="off" type="email" name="form[email]" data-required="email">
-								<label class="form__label" for="name">Full name<span> *</span></label>
-								<input class="form__input" id="name" autocomplete="off" type="text" name="form[name]" data-required>
-								<label class="form__label" for="password">Password<span> *</span></label>
-								<input class="form__input" id="password" autocomplete="off" type="password" name="form[password]" data-required>
-								<button class="form__button" type="submit">Sign up</button>
-							</form>
-							<div class="main-form__info">
-								<p class="main-form__terms">
-									By signing up, you agree to our
-									<a href="#">Terms of Service.</a>
-								</p>
-								<p class="main-form__log">
-									Already have an account?
-									<a href="#">Log in</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
+	<div class="rootpage">
+		<h1>Better Market</h1>
+		<div class="rootpage__info">
+			Project Description
+		</div>
+		<h2>Ready pages:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="register.html">Register form</a></li>
+		</ol>
+
 	</div>
-	<script src="js/app.min.js?_v=20230103134732"></script>
 </body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background-color: #5e5373;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #ebe691
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #aaa768;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #ebe691;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #ebe691;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #32b5a4;
+
+	}
+
+	.rootpage__contacts a {
+		color: #ebe691;
+	}
+
+	.rootpage__tnx {
+		background: #c22d63;
+		margin: 0px 0px 1rem 0px;
+	}
+</style>
 
 </html>
