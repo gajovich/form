@@ -251,7 +251,13 @@ h6 {
   color: #19b07e;
 }
 
+.form__line {
+  position: relative;
+  padding-bottom: 1.25rem;
+}
+
 .form__label {
+  display: block;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.1875;
@@ -264,12 +270,47 @@ h6 {
 }
 
 .form__input {
+  width: 100%;
   outline: none;
   border-bottom: 1px solid #343434;
+  padding-bottom: 0.5rem;
+  border-radius: 0;
 }
 
-.form__input._form-error {
-  border-bottom: 1px solid #e33d5f;
+.form__input::-webkit-input-placeholder {
+  letter-spacing: 0.206977px;
+  color: rgba(52, 52, 52, 0.3);
+}
+
+.form__input::-moz-placeholder {
+  letter-spacing: 0.206977px;
+  color: rgba(52, 52, 52, 0.3);
+}
+
+.form__input:-ms-input-placeholder {
+  letter-spacing: 0.206977px;
+  color: rgba(52, 52, 52, 0.3);
+}
+
+.form__input::-ms-input-placeholder {
+  letter-spacing: 0.206977px;
+  color: rgba(52, 52, 52, 0.3);
+}
+
+.form__input::placeholder {
+  letter-spacing: 0.206977px;
+  color: rgba(52, 52, 52, 0.3);
+}
+
+.form__error {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0.75rem;
+  line-height: 1;
+  text-align: right;
+  letter-spacing: 0.206977px;
+  color: #e33e3e;
 }
 
 .form__button {
@@ -283,7 +324,7 @@ h6 {
   -webkit-transition: background-color 0.3s ease 0s;
   -o-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
-  margin-top: 0.1875rem;
+  margin-top: 0.8125rem;
 }
 
 @media (min-width: 74.375em) {
@@ -319,8 +360,16 @@ h6 {
     margin-bottom: 4.8125rem;
   }
 
-  .form__input {
-    margin-bottom: 2.9375rem;
+  .form__line {
+    margin-bottom: 1.6875rem;
+  }
+
+  .form__label {
+    margin-bottom: 1.5625rem;
+  }
+
+  .form__error {
+    margin-top: 0.6875rem;
   }
 
   .form__button {
@@ -365,8 +414,16 @@ h6 {
     margin-bottom: 1.25rem;
   }
 
-  .form__input {
-    margin-bottom: 1.25rem;
+  .form__line {
+    margin-bottom: 0.625rem;
+  }
+
+  .form__label {
+    margin-bottom: 0.625rem;
+  }
+
+  .form__error {
+    margin-top: 0.3125rem;
   }
 
   .form__button {
@@ -493,15 +550,39 @@ h6 {
     }
 }
 
-@supports (margin-bottom: clamp( 1.25rem , 0.6293103448rem  +  3.1034482759vw , 2.9375rem )) {
-    .form__input {
-      margin-bottom: clamp( 1.25rem , 0.6293103448rem  +  3.1034482759vw , 2.9375rem );
+@supports (margin-bottom: clamp( 0.625rem , 0.2341954023rem  +  1.9540229885vw , 1.6875rem )) {
+    .form__line {
+      margin-bottom: clamp( 0.625rem , 0.2341954023rem  +  1.9540229885vw , 1.6875rem );
     }
 }
 
-@supports not (margin-bottom: clamp( 1.25rem , 0.6293103448rem  +  3.1034482759vw , 2.9375rem )) {
-    .form__input {
-      margin-bottom: calc(1.25rem + 1.6875 * (100vw - 20rem) / 54.375);
+@supports not (margin-bottom: clamp( 0.625rem , 0.2341954023rem  +  1.9540229885vw , 1.6875rem )) {
+    .form__line {
+      margin-bottom: calc(0.625rem + 1.0625 * (100vw - 20rem) / 54.375);
+    }
+}
+
+@supports (margin-bottom: clamp( 0.625rem , 0.2801724138rem  +  1.724137931vw , 1.5625rem )) {
+    .form__label {
+      margin-bottom: clamp( 0.625rem , 0.2801724138rem  +  1.724137931vw , 1.5625rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 0.625rem , 0.2801724138rem  +  1.724137931vw , 1.5625rem )) {
+    .form__label {
+      margin-bottom: calc(0.625rem + 0.9375 * (100vw - 20rem) / 54.375);
+    }
+}
+
+@supports (margin-top: clamp( 0.3125rem , 0.1745689655rem  +  0.6896551724vw , 0.6875rem )) {
+    .form__error {
+      margin-top: clamp( 0.3125rem , 0.1745689655rem  +  0.6896551724vw , 0.6875rem );
+    }
+}
+
+@supports not (margin-top: clamp( 0.3125rem , 0.1745689655rem  +  0.6896551724vw , 0.6875rem )) {
+    .form__error {
+      margin-top: calc(0.3125rem + 0.375 * (100vw - 20rem) / 54.375);
     }
 }
 
