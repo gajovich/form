@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>ProducerSteps</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230110195532">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page page__producer">
+			<section class="main-form">
+				<div class="main-form__container">
+					<form action="#" class="main-form__steps-form form">
+						<div class="main-form__step-one _active">
+							<h6 class="form__step">Step 1/2</h6>
+							<h2 class="form__title title">Select your targeting</h2>
+							<div class="form__select-option option-select">
+								<div class="option-select__title">Country you are targeting *</div>
+								<div class="option-select__text">You can select multiple countries, just press «Select
+									an option» button every time you want to add a country.
+								</div>
+								<button type="button" class="option-select__button">Select an option</button>
+							</div>
+							<div class="form__select-option option-select">
+								<div class="option-select__title">Country you DON’T want to target *</div>
+								<div class="option-select__text">You can select multiple countries, just press “Select
+									an option” button every time you want to add a country.</div>
+								<button type="button" class="option-select__button">Select an option</button>
+							</div>
+							<div class="form__select-option option-select">
+								<div class="option-select__title">Client you are targeting *</div>
+								<div class="option-select__text">Multiple selection available</div>
+								<div class="option-select__checkboxes">
+									<div class="checkbox">
+										<input id="c_1" class="checkbox__input" type="checkbox" value="discounters" name="form[client]">
+										<label for="c_1" class="checkbox__label"><span class="checkbox__text">+
+												Discounters</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="c_2" class="checkbox__input" type="checkbox" value="convenience" name="form[client]">
+										<label for="c_2" class="checkbox__label"><span class="checkbox__text">+
+												Convenience stores</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="c_3" class="checkbox__input" type="checkbox" value="supermarkets" name="form[client]">
+										<label for="c_3" class="checkbox__label"><span class="checkbox__text">+
+												Supermarkets</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="c_4" class="checkbox__input" type="checkbox" value="specialized" name="form[client]">
+										<label for="c_4" class="checkbox__label"><span class="checkbox__text">+
+												Specialized shops</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="c_5" class="checkbox__input" type="checkbox" value="wholesalers" name="form[client]">
+										<label for="c_5" class="checkbox__label"><span class="checkbox__text">+
+												Wholesalers</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="c_6" class="checkbox__input" type="checkbox" value="distributors" name="form[client]">
+										<label for="c_6" class="checkbox__label"><span class="checkbox__text">+
+												Distributors </span></label>
+									</div>
+									<div class="checkbox">
+										<input id="c_7" class="checkbox__input" type="checkbox" value="horeca" name="form[client]">
+										<label for="c_7" class="checkbox__label"><span class="checkbox__text">+
+												HORECA</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="c_8" class="checkbox__input" type="checkbox" value="manufacturers" name="form[client]">
+										<label for="c_8" class="checkbox__label"><span class="checkbox__text">+
+												Manufacturers</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="form__action">
+								<button class="form__button-next  btn" type="button">Go to the next step</button>
+							</div>
+						</div>
+						<div class="main-form__step-two">
+							<h6 class="form__step">Step 2/2</h6>
+							<h2 class="form__title title">Your Company & Products</h2>
+							<div class="form__select-option option-select option-select__inputs">
+								<div class="option-select__line">
+									<label class="form__label" for="company">Company name<span> *</span></label>
+									<input class="option-select__input" id="company" autocomplete="off" type="text" name="form[company]" placeholder="Dry fruits inc.">
+								</div>
+								<div class="option-select__line">
+									<label class="form__label" for="phone">Phone number<span> *</span></label>
+									<input class="option-select__input" id="phone" autocomplete="off" type="text" name="form[phone]" placeholder="+44 7911 123456">
+								</div>
+								<div class="option-select__line">
+									<label class="form__label" for="country">Country<span> *</span></label>
+									<select id="country" name="form[country]" data-class-modif="form">
+										<option value="1" selected>Select your country</option>
+										<option value="2">Country №1</option>
+										<option value="3">Country №2</option>
+										<option value="4">Country №3</option>
+									</select>
+								</div>
+							</div>
+							<div class="form__select-option option-select">
+								<h6 class="option-select__title">Product group *</h6>
+								<p class="option-select__text">You can select multiple countries, just press «Select an
+									option» button every time you want to add a country.</p>
+								<button type="button" class="option-select__button">Select
+									an option</button>
+								<div class="option-select__items">
+									<div class="option-select__item">
+										<span>Organic Ice Cream</span>
+										<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.21075 0.446825C0.491739 0.165837 0.947311 0.165837 1.2283 0.446825L4.00001 3.21853L6.7717 0.446838C7.05269 0.16585 7.50826 0.16585 7.78925 0.446838C8.07024 0.727827 8.07024 1.1834 7.78925 1.46439L5.01756 4.23608L7.78926 7.00778C8.07025 7.28877 8.07025 7.74434 7.78926 8.02533C7.50827 8.30632 7.0527 8.30632 6.77171 8.02533L4.00001 5.25363L1.22829 8.02534C0.947301 8.30633 0.491729 8.30633 0.210741 8.02534C-0.0702471 7.74435 -0.0702471 7.28878 0.210741 7.00779L2.98246 4.23608L0.21075 1.46437C-0.0702378 1.18338 -0.0702378 0.727813 0.21075 0.446825Z" fill="#343434" />
+										</svg>
+									</div>
+									<div class="option-select__item">
+										<span>Chilled Organic Pasta</span>
+										<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.21075 0.446825C0.491739 0.165837 0.947311 0.165837 1.2283 0.446825L4.00001 3.21853L6.7717 0.446838C7.05269 0.16585 7.50826 0.16585 7.78925 0.446838C8.07024 0.727827 8.07024 1.1834 7.78925 1.46439L5.01756 4.23608L7.78926 7.00778C8.07025 7.28877 8.07025 7.74434 7.78926 8.02533C7.50827 8.30632 7.0527 8.30632 6.77171 8.02533L4.00001 5.25363L1.22829 8.02534C0.947301 8.30633 0.491729 8.30633 0.210741 8.02534C-0.0702471 7.74435 -0.0702471 7.28878 0.210741 7.00779L2.98246 4.23608L0.21075 1.46437C-0.0702378 1.18338 -0.0702378 0.727813 0.21075 0.446825Z" fill="#343434" />
+										</svg>
+									</div>
+									<div class="option-select__item">
+										<span>Gluten Free Foods</span>
+										<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.21075 0.446825C0.491739 0.165837 0.947311 0.165837 1.2283 0.446825L4.00001 3.21853L6.7717 0.446838C7.05269 0.16585 7.50826 0.16585 7.78925 0.446838C8.07024 0.727827 8.07024 1.1834 7.78925 1.46439L5.01756 4.23608L7.78926 7.00778C8.07025 7.28877 8.07025 7.74434 7.78926 8.02533C7.50827 8.30632 7.0527 8.30632 6.77171 8.02533L4.00001 5.25363L1.22829 8.02534C0.947301 8.30633 0.491729 8.30633 0.210741 8.02534C-0.0702471 7.74435 -0.0702471 7.28878 0.210741 7.00779L2.98246 4.23608L0.21075 1.46437C-0.0702378 1.18338 -0.0702378 0.727813 0.21075 0.446825Z" fill="#343434" />
+										</svg>
+									</div>
+									<div class="option-select__item">
+										<span>Fruit and Vegetable Powder</span>
+										<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.21075 0.446825C0.491739 0.165837 0.947311 0.165837 1.2283 0.446825L4.00001 3.21853L6.7717 0.446838C7.05269 0.16585 7.50826 0.16585 7.78925 0.446838C8.07024 0.727827 8.07024 1.1834 7.78925 1.46439L5.01756 4.23608L7.78926 7.00778C8.07025 7.28877 8.07025 7.74434 7.78926 8.02533C7.50827 8.30632 7.0527 8.30632 6.77171 8.02533L4.00001 5.25363L1.22829 8.02534C0.947301 8.30633 0.491729 8.30633 0.210741 8.02534C-0.0702471 7.74435 -0.0702471 7.28878 0.210741 7.00779L2.98246 4.23608L0.21075 1.46437C-0.0702378 1.18338 -0.0702378 0.727813 0.21075 0.446825Z" fill="#343434" />
+										</svg>
+									</div>
+									<div class="option-select__item">
+										<span>Raw Ingredients</span>
+										<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.21075 0.446825C0.491739 0.165837 0.947311 0.165837 1.2283 0.446825L4.00001 3.21853L6.7717 0.446838C7.05269 0.16585 7.50826 0.16585 7.78925 0.446838C8.07024 0.727827 8.07024 1.1834 7.78925 1.46439L5.01756 4.23608L7.78926 7.00778C8.07025 7.28877 8.07025 7.74434 7.78926 8.02533C7.50827 8.30632 7.0527 8.30632 6.77171 8.02533L4.00001 5.25363L1.22829 8.02534C0.947301 8.30633 0.491729 8.30633 0.210741 8.02534C-0.0702471 7.74435 -0.0702471 7.28878 0.210741 7.00779L2.98246 4.23608L0.21075 1.46437C-0.0702378 1.18338 -0.0702378 0.727813 0.21075 0.446825Z" fill="#343434" />
+										</svg>
+									</div>
+									<div class="option-select__item">
+										<span>Oat Products</span>
+										<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.21075 0.446825C0.491739 0.165837 0.947311 0.165837 1.2283 0.446825L4.00001 3.21853L6.7717 0.446838C7.05269 0.16585 7.50826 0.16585 7.78925 0.446838C8.07024 0.727827 8.07024 1.1834 7.78925 1.46439L5.01756 4.23608L7.78926 7.00778C8.07025 7.28877 8.07025 7.74434 7.78926 8.02533C7.50827 8.30632 7.0527 8.30632 6.77171 8.02533L4.00001 5.25363L1.22829 8.02534C0.947301 8.30633 0.491729 8.30633 0.210741 8.02534C-0.0702471 7.74435 -0.0702471 7.28878 0.210741 7.00779L2.98246 4.23608L0.21075 1.46437C-0.0702378 1.18338 -0.0702378 0.727813 0.21075 0.446825Z" fill="#343434" />
+										</svg>
+									</div>
+									<div class="option-select__item">
+										<span>Muesli</span>
+										<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.21075 0.446825C0.491739 0.165837 0.947311 0.165837 1.2283 0.446825L4.00001 3.21853L6.7717 0.446838C7.05269 0.16585 7.50826 0.16585 7.78925 0.446838C8.07024 0.727827 8.07024 1.1834 7.78925 1.46439L5.01756 4.23608L7.78926 7.00778C8.07025 7.28877 8.07025 7.74434 7.78926 8.02533C7.50827 8.30632 7.0527 8.30632 6.77171 8.02533L4.00001 5.25363L1.22829 8.02534C0.947301 8.30633 0.491729 8.30633 0.210741 8.02534C-0.0702471 7.74435 -0.0702471 7.28878 0.210741 7.00779L2.98246 4.23608L0.21075 1.46437C-0.0702378 1.18338 -0.0702378 0.727813 0.21075 0.446825Z" fill="#343434" />
+										</svg>
+									</div>
+									<div class="option-select__item">
+										<span>Snails</span>
+										<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.21075 0.446825C0.491739 0.165837 0.947311 0.165837 1.2283 0.446825L4.00001 3.21853L6.7717 0.446838C7.05269 0.16585 7.50826 0.16585 7.78925 0.446838C8.07024 0.727827 8.07024 1.1834 7.78925 1.46439L5.01756 4.23608L7.78926 7.00778C8.07025 7.28877 8.07025 7.74434 7.78926 8.02533C7.50827 8.30632 7.0527 8.30632 6.77171 8.02533L4.00001 5.25363L1.22829 8.02534C0.947301 8.30633 0.491729 8.30633 0.210741 8.02534C-0.0702471 7.74435 -0.0702471 7.28878 0.210741 7.00779L2.98246 4.23608L0.21075 1.46437C-0.0702378 1.18338 -0.0702378 0.727813 0.21075 0.446825Z" fill="#343434" />
+										</svg>
+									</div>
+									<div class="option-select__item">
+										<span>Vinegar</span>
+										<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.21075 0.446825C0.491739 0.165837 0.947311 0.165837 1.2283 0.446825L4.00001 3.21853L6.7717 0.446838C7.05269 0.16585 7.50826 0.16585 7.78925 0.446838C8.07024 0.727827 8.07024 1.1834 7.78925 1.46439L5.01756 4.23608L7.78926 7.00778C8.07025 7.28877 8.07025 7.74434 7.78926 8.02533C7.50827 8.30632 7.0527 8.30632 6.77171 8.02533L4.00001 5.25363L1.22829 8.02534C0.947301 8.30633 0.491729 8.30633 0.210741 8.02534C-0.0702471 7.74435 -0.0702471 7.28878 0.210741 7.00779L2.98246 4.23608L0.21075 1.46437C-0.0702378 1.18338 -0.0702378 0.727813 0.21075 0.446825Z" fill="#343434" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="form__select-option option-select">
+								<div class="option-select__addfile-items">
+									<div class="option-select__addfile-item">
+										<div class="option-select__addfile-title">Product catalog</div>
+										<div class="option-select__addfile-body">
+											<input class="option-select__addfile-input" name="file1" type="file" id="file1" multiple>
+											<label class="option-select__addfile-label option-select__button" for="file1"><span>Attach a file</span></label>
+										</div>
+									</div>
+									<div class="option-select__addfile-item">
+										<div class="option-select__addfile-title">Price list</div>
+										<div class="option-select__addfile-body">
+											<input class="option-select__addfile-input" name="file2" type="file" id="file2" multiple>
+											<label class="option-select__addfile-label  option-select__button" for="file2"><span>Attach a file</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__select-option option-select">
+								<h6 class="option-select__title">Certificates your company holds *</h6>
+								<p class="option-select__text">Multiple selection available</p>
+								<div class="option-select__checkboxes">
+									<div class="checkbox">
+										<input id="src_1" class="checkbox__input" type="checkbox" value="ISO9001" name="form[certificates]">
+										<label for="src_1" class="checkbox__label"><span class="checkbox__text">+ ISO
+												9001</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="src_2" class="checkbox__input" type="checkbox" value="ISO22000" name="form[certificates]">
+										<label for="src_2" class="checkbox__label"><span class="checkbox__text">+ ISO
+												22000</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="src_3" class="checkbox__input" type="checkbox" value="BRC" name="form[certificates]">
+										<label for="src_3" class="checkbox__label"><span class="checkbox__text">+ BRC
+												Global Standard for Food Safety</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="src_4" class="checkbox__input" type="checkbox" value="KOSHER" name="form[certificates]">
+										<label for="src_4" class="checkbox__label"><span class="checkbox__text">+
+												KOSHER</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="src_5" class="checkbox__input" type="checkbox" value="HALAL" name="form[certificates]">
+										<label for="src_5" class="checkbox__label"><span class="checkbox__text">+
+												HALAL</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="src_6" class="checkbox__input" type="checkbox" value="IFS" name="form[certificates]">
+										<label for="src_6" class="checkbox__label"><span class="checkbox__text">+ IFS
+												International Feautred Standards</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="src_7" class="checkbox__input" type="checkbox" value="GAP" name="form[certificates]">
+										<label for="src_7" class="checkbox__label"><span class="checkbox__text">+ Global
+												GAP</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="src_8" class="checkbox__input" type="checkbox" value="GMO" name="form[certificates]">
+										<label for="src_8" class="checkbox__label"><span class="checkbox__text">+ NO
+												GMO</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="src_9" class="checkbox__input" type="checkbox" value="FSSC22000" name="form[certificates]">
+										<label for="src_9" class="checkbox__label"><span class="checkbox__text">+ FSSC
+												22000</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="form__action">
+								<button class="form__button-prev  btn btn_w" type="button">Back</button>
+								<button class="form__submit btn" type="submit">Apply</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20230110195532"></script>
+</body>
+
+</html>
