@@ -648,6 +648,15 @@
             stepOne.classList.add("_active");
         }
     }));
+    let inputs = document.querySelectorAll(".option-select__addfile-input");
+    inputs.forEach((function(input) {
+        let label = input.nextElementSibling, labelVal = label.querySelector(".option-select__addfile-label span").innerText;
+        input.addEventListener("change", (function(e) {
+            let countFiles = "";
+            if (this.files && this.files.length >= 1) countFiles = this.files.length;
+            if (countFiles) label.querySelector(".option-select__addfile-label span").innerText = `Attached ${countFiles} file`; else label.querySelector(".option-select__addfile-label span").innerText = labelVal;
+        }));
+    }));
     formFieldsInit({
         viewPass: false,
         autoHeight: false
