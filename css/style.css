@@ -168,6 +168,10 @@ h6 {
   position: relative;
 }
 
+.select .select-placeholder {
+  color: rgba(52, 52, 52, 0.3);
+}
+
 .select__body {
   position: relative;
 }
@@ -178,11 +182,10 @@ h6 {
   border-radius: 0.5rem;
   cursor: pointer;
   width: 100%;
-  padding: 0.4375rem 1rem;
+  padding: 0.53125rem 1rem;
   font-size: 1rem;
   line-height: 1.1875;
   letter-spacing: 0.2px;
-  color: rgba(52, 52, 52, 0.3);
 }
 
 .select__value {
@@ -264,7 +267,6 @@ h6 {
 }
 
 .select__options {
-  color: #000;
   position: absolute;
   top: calc(100% - 0.0625rem);
   border-radius: 0 0 0.5rem 0.5rem;
@@ -277,7 +279,6 @@ h6 {
   font-size: 1rem;
   line-height: 1.1875;
   letter-spacing: 0.2px;
-  color: rgba(52, 52, 52, 0.3);
 }
 
 .select__scroll {
@@ -513,6 +514,7 @@ h6 {
 }
 
 .option-select__input {
+  font-size: 1rem;
   outline: none;
   padding: 0.8125rem 1rem;
   background-color: #f7f7f7;
@@ -662,6 +664,11 @@ h6 {
 
 .main-form__logo {
   margin-bottom: 0.625rem;
+  width: 12rem;
+}
+
+.main-form__logo img {
+  width: 100%;
 }
 
 .main-form__text {
@@ -742,30 +749,21 @@ h6 {
   left: 0;
   opacity: 0;
   visibility: hidden;
-  -webkit-transform: scale(0.8);
-      -ms-transform: scale(0.8);
-          transform: scale(0.8);
 }
 
 .main-form__step-one._active {
   position: unset;
   opacity: 1;
   visibility: visible;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: all 0.6s ease 0s;
-  -o-transition: all 0.6s ease 0s;
-  transition: all 0.6s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .main-form__step-two {
   position: absolute;
   top: -100%;
   left: 0;
-  -webkit-transform: scale(0.8);
-      -ms-transform: scale(0.8);
-          transform: scale(0.8);
   opacity: 0;
   visibility: hidden;
 }
@@ -774,12 +772,9 @@ h6 {
   position: unset;
   opacity: 1;
   visibility: visible;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: all 0.6s ease 0s;
-  -o-transition: all 0.6s ease 0s;
-  transition: all 0.6s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .main-form__step-two .option-select__inputs {
