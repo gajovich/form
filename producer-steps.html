@@ -5,7 +5,7 @@
 	<title>ProducerSteps</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230115011115">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230115114254">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -24,12 +24,40 @@
 									an option» button every time you want to add a country.
 								</div>
 								<button type="button" class="option-select__button">Select an option</button>
+								<select name="form[countriesTargeting]" data-class-modif="form" multiple data-tags=".option-select__items-countries-targeting" data-search data-checkbox data-scroll="250">
+									<option value="" selected>Search</option>
+									<option value="1">Afghanistan</option>
+									<option value="2">Algeria</option>
+									<option value="3">Angola</option>
+									<option value="4">Andorra</option>
+									<option value="5">Albania</option>
+									<option value="6">Argentina</option>
+									<option value="7">Togo</option>
+									<option value="8">Israel</option>
+									<option value="9">Ukraine</option>
+									<option value="10">USA</option>
+								</select>
+								<div class="option-select__items option-select__items-countries-targeting"></div>
 							</div>
 							<div class="form__select-option option-select">
 								<div class="option-select__title">Country you DON’T want to target *</div>
 								<div class="option-select__text">You can select multiple countries, just press “Select
 									an option” button every time you want to add a country.</div>
 								<button type="button" class="option-select__button">Select an option</button>
+								<select name="form[countriesNotTargeting]" data-class-modif="form" multiple data-tags=".option-select__items-countries-nottargeting" data-search data-checkbox data-scroll="250">
+									<option value="" selected>Search</option>
+									<option value="1">Afghanistan</option>
+									<option value="2">Algeria</option>
+									<option value="3">Angola</option>
+									<option value="4">Andorra</option>
+									<option value="5">Albania</option>
+									<option value="6">Argentina</option>
+									<option value="7">Togo</option>
+									<option value="8">Israel</option>
+									<option value="9">Ukraine</option>
+									<option value="10">USA</option>
+								</select>
+								<div class="option-select__items option-select__items-countries-nottargeting"></div>
 							</div>
 							<div class="form__select-option option-select">
 								<div class="option-select__title">Client you are targeting *</div>
@@ -96,7 +124,8 @@
 								<div class="option-select__line">
 									<label class="form__label" for="country">Country<span> *</span></label>
 									<select id="country" name="form[country]" data-class-modif="form">
-										<option data-class="select-placeholder" value="1" selected>Select your country</option>
+										<option data-class="select-placeholder" value="1" selected>Select your country
+										</option>
 										<option value="2">Country №1</option>
 										<option value="3">Country №2</option>
 										<option value="4">Country №3</option>
@@ -109,62 +138,19 @@
 									option» button every time you want to add a country.</p>
 								<button type="button" class="option-select__button">Select
 									an option</button>
-								<div class="option-select__items">
-									<div class="option-select__item">
-										<span>Organic Ice Cream</span>
-										<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.21075 0.446825C0.491739 0.165837 0.947311 0.165837 1.2283 0.446825L4.00001 3.21853L6.7717 0.446838C7.05269 0.16585 7.50826 0.16585 7.78925 0.446838C8.07024 0.727827 8.07024 1.1834 7.78925 1.46439L5.01756 4.23608L7.78926 7.00778C8.07025 7.28877 8.07025 7.74434 7.78926 8.02533C7.50827 8.30632 7.0527 8.30632 6.77171 8.02533L4.00001 5.25363L1.22829 8.02534C0.947301 8.30633 0.491729 8.30633 0.210741 8.02534C-0.0702471 7.74435 -0.0702471 7.28878 0.210741 7.00779L2.98246 4.23608L0.21075 1.46437C-0.0702378 1.18338 -0.0702378 0.727813 0.21075 0.446825Z" fill="#343434" />
-										</svg>
-									</div>
-									<div class="option-select__item">
-										<span>Chilled Organic Pasta</span>
-										<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.21075 0.446825C0.491739 0.165837 0.947311 0.165837 1.2283 0.446825L4.00001 3.21853L6.7717 0.446838C7.05269 0.16585 7.50826 0.16585 7.78925 0.446838C8.07024 0.727827 8.07024 1.1834 7.78925 1.46439L5.01756 4.23608L7.78926 7.00778C8.07025 7.28877 8.07025 7.74434 7.78926 8.02533C7.50827 8.30632 7.0527 8.30632 6.77171 8.02533L4.00001 5.25363L1.22829 8.02534C0.947301 8.30633 0.491729 8.30633 0.210741 8.02534C-0.0702471 7.74435 -0.0702471 7.28878 0.210741 7.00779L2.98246 4.23608L0.21075 1.46437C-0.0702378 1.18338 -0.0702378 0.727813 0.21075 0.446825Z" fill="#343434" />
-										</svg>
-									</div>
-									<div class="option-select__item">
-										<span>Gluten Free Foods</span>
-										<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.21075 0.446825C0.491739 0.165837 0.947311 0.165837 1.2283 0.446825L4.00001 3.21853L6.7717 0.446838C7.05269 0.16585 7.50826 0.16585 7.78925 0.446838C8.07024 0.727827 8.07024 1.1834 7.78925 1.46439L5.01756 4.23608L7.78926 7.00778C8.07025 7.28877 8.07025 7.74434 7.78926 8.02533C7.50827 8.30632 7.0527 8.30632 6.77171 8.02533L4.00001 5.25363L1.22829 8.02534C0.947301 8.30633 0.491729 8.30633 0.210741 8.02534C-0.0702471 7.74435 -0.0702471 7.28878 0.210741 7.00779L2.98246 4.23608L0.21075 1.46437C-0.0702378 1.18338 -0.0702378 0.727813 0.21075 0.446825Z" fill="#343434" />
-										</svg>
-									</div>
-									<div class="option-select__item">
-										<span>Fruit and Vegetable Powder</span>
-										<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.21075 0.446825C0.491739 0.165837 0.947311 0.165837 1.2283 0.446825L4.00001 3.21853L6.7717 0.446838C7.05269 0.16585 7.50826 0.16585 7.78925 0.446838C8.07024 0.727827 8.07024 1.1834 7.78925 1.46439L5.01756 4.23608L7.78926 7.00778C8.07025 7.28877 8.07025 7.74434 7.78926 8.02533C7.50827 8.30632 7.0527 8.30632 6.77171 8.02533L4.00001 5.25363L1.22829 8.02534C0.947301 8.30633 0.491729 8.30633 0.210741 8.02534C-0.0702471 7.74435 -0.0702471 7.28878 0.210741 7.00779L2.98246 4.23608L0.21075 1.46437C-0.0702378 1.18338 -0.0702378 0.727813 0.21075 0.446825Z" fill="#343434" />
-										</svg>
-									</div>
-									<div class="option-select__item">
-										<span>Raw Ingredients</span>
-										<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.21075 0.446825C0.491739 0.165837 0.947311 0.165837 1.2283 0.446825L4.00001 3.21853L6.7717 0.446838C7.05269 0.16585 7.50826 0.16585 7.78925 0.446838C8.07024 0.727827 8.07024 1.1834 7.78925 1.46439L5.01756 4.23608L7.78926 7.00778C8.07025 7.28877 8.07025 7.74434 7.78926 8.02533C7.50827 8.30632 7.0527 8.30632 6.77171 8.02533L4.00001 5.25363L1.22829 8.02534C0.947301 8.30633 0.491729 8.30633 0.210741 8.02534C-0.0702471 7.74435 -0.0702471 7.28878 0.210741 7.00779L2.98246 4.23608L0.21075 1.46437C-0.0702378 1.18338 -0.0702378 0.727813 0.21075 0.446825Z" fill="#343434" />
-										</svg>
-									</div>
-									<div class="option-select__item">
-										<span>Oat Products</span>
-										<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.21075 0.446825C0.491739 0.165837 0.947311 0.165837 1.2283 0.446825L4.00001 3.21853L6.7717 0.446838C7.05269 0.16585 7.50826 0.16585 7.78925 0.446838C8.07024 0.727827 8.07024 1.1834 7.78925 1.46439L5.01756 4.23608L7.78926 7.00778C8.07025 7.28877 8.07025 7.74434 7.78926 8.02533C7.50827 8.30632 7.0527 8.30632 6.77171 8.02533L4.00001 5.25363L1.22829 8.02534C0.947301 8.30633 0.491729 8.30633 0.210741 8.02534C-0.0702471 7.74435 -0.0702471 7.28878 0.210741 7.00779L2.98246 4.23608L0.21075 1.46437C-0.0702378 1.18338 -0.0702378 0.727813 0.21075 0.446825Z" fill="#343434" />
-										</svg>
-									</div>
-									<div class="option-select__item">
-										<span>Muesli</span>
-										<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.21075 0.446825C0.491739 0.165837 0.947311 0.165837 1.2283 0.446825L4.00001 3.21853L6.7717 0.446838C7.05269 0.16585 7.50826 0.16585 7.78925 0.446838C8.07024 0.727827 8.07024 1.1834 7.78925 1.46439L5.01756 4.23608L7.78926 7.00778C8.07025 7.28877 8.07025 7.74434 7.78926 8.02533C7.50827 8.30632 7.0527 8.30632 6.77171 8.02533L4.00001 5.25363L1.22829 8.02534C0.947301 8.30633 0.491729 8.30633 0.210741 8.02534C-0.0702471 7.74435 -0.0702471 7.28878 0.210741 7.00779L2.98246 4.23608L0.21075 1.46437C-0.0702378 1.18338 -0.0702378 0.727813 0.21075 0.446825Z" fill="#343434" />
-										</svg>
-									</div>
-									<div class="option-select__item">
-										<span>Snails</span>
-										<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.21075 0.446825C0.491739 0.165837 0.947311 0.165837 1.2283 0.446825L4.00001 3.21853L6.7717 0.446838C7.05269 0.16585 7.50826 0.16585 7.78925 0.446838C8.07024 0.727827 8.07024 1.1834 7.78925 1.46439L5.01756 4.23608L7.78926 7.00778C8.07025 7.28877 8.07025 7.74434 7.78926 8.02533C7.50827 8.30632 7.0527 8.30632 6.77171 8.02533L4.00001 5.25363L1.22829 8.02534C0.947301 8.30633 0.491729 8.30633 0.210741 8.02534C-0.0702471 7.74435 -0.0702471 7.28878 0.210741 7.00779L2.98246 4.23608L0.21075 1.46437C-0.0702378 1.18338 -0.0702378 0.727813 0.21075 0.446825Z" fill="#343434" />
-										</svg>
-									</div>
-									<div class="option-select__item">
-										<span>Vinegar</span>
-										<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.21075 0.446825C0.491739 0.165837 0.947311 0.165837 1.2283 0.446825L4.00001 3.21853L6.7717 0.446838C7.05269 0.16585 7.50826 0.16585 7.78925 0.446838C8.07024 0.727827 8.07024 1.1834 7.78925 1.46439L5.01756 4.23608L7.78926 7.00778C8.07025 7.28877 8.07025 7.74434 7.78926 8.02533C7.50827 8.30632 7.0527 8.30632 6.77171 8.02533L4.00001 5.25363L1.22829 8.02534C0.947301 8.30633 0.491729 8.30633 0.210741 8.02534C-0.0702471 7.74435 -0.0702471 7.28878 0.210741 7.00779L2.98246 4.23608L0.21075 1.46437C-0.0702378 1.18338 -0.0702378 0.727813 0.21075 0.446825Z" fill="#343434" />
-										</svg>
-									</div>
-								</div>
+								<select name="form[products]" data-class-modif="form" multiple data-tags=".option-select__items-products" data-search data-checkbox data-scroll="250">
+									<option value="" selected>Search</option>
+									<option value="1">Organic Ice Cream</option>
+									<option value="2">Chilled Organic Pasta</option>
+									<option value="3">Gluten Free Foods</option>
+									<option value="4">Fruit and Vegetable Powder</option>
+									<option value="5">Raw Ingredients</option>
+									<option value="6">Oat Products</option>
+									<option value="7">Muesli</option>
+									<option value="8">Snails</option>
+									<option value="9">Vinegar</option>
+								</select>
+								<div class="option-select__items option-select__items-products"></div>
 							</div>
 							<div class="form__select-option option-select">
 								<div class="option-select__addfile-items">
@@ -172,14 +158,14 @@
 										<div class="option-select__addfile-title">Product catalog</div>
 										<div class="option-select__addfile-body">
 											<input class="option-select__addfile-input" name="file1" type="file" id="file1" multiple>
-											<label class="option-select__addfile-label option-select__button" for="file1"><span>Attach a file</span></label>
+											<label class="option-select__addfile-label" for="file1"><span>Attach a file</span></label>
 										</div>
 									</div>
 									<div class="option-select__addfile-item">
 										<div class="option-select__addfile-title">Price list</div>
 										<div class="option-select__addfile-body">
 											<input class="option-select__addfile-input" name="file2" type="file" id="file2" multiple>
-											<label class="option-select__addfile-label  option-select__button" for="file2"><span>Attach a file</span></label>
+											<label class="option-select__addfile-label" for="file2"><span>Attach a file</span></label>
 										</div>
 									</div>
 								</div>
@@ -245,7 +231,7 @@
 			</section>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20230115011115"></script>
+	<script src="js/app.min.js?_v=20230115114254"></script>
 </body>
 
 </html>
