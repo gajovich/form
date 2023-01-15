@@ -315,6 +315,8 @@ h6 {
 
 .select._select-checkbox {
   position: absolute;
+  left: 0;
+  top: 0;
   opacity: 0;
   visibility: hidden;
   max-width: 30.9375rem;
@@ -935,6 +937,24 @@ h6 {
 
 .page__producer .btn_w {
   background-color: #fff;
+}
+
+.page__producer .option-select__addfile-label {
+  background-color: #fbe9de;
+  color: #232323;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.875rem;
+  font-size: 0.8125rem;
+  line-height: 1.2307692308;
+  letter-spacing: -0.40625px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.page__producer .checkbox__input:checked + .checkbox__label {
+  border: 1px solid #232323;
+  color: #232323;
 }
 
 [data-simplebar] {
@@ -1679,5 +1699,23 @@ h6 {
 
   .page__producer .btn:hover {
     background-color: #bb5c03;
+  }
+
+  .page__producer .option-select__items span:hover {
+    color: #e46f00;
+  }
+
+  .page__producer .option-select__items span:hover::after {
+    background: url("../img/cross-yellow.svg") 0 0 no-repeat;
+  }
+
+  .page__producer .option-select__addfile-label:hover {
+    background-color: #e46f00;
+    color: #fff;
+  }
+
+  .page__producer .checkbox__label:hover {
+    color: #e46f00;
+    border: 1px solid #e46f00;
   }
 }
