@@ -5088,10 +5088,12 @@
             let searchButtons = document.querySelectorAll(".option-select__button");
             searchButtons.forEach((button => {
                 let select = button.nextElementSibling;
+                let selectOptions = select.querySelector(".select__options");
                 if (e.target === button) {
                     select.classList.add("_active");
                     button.classList.add("_hidden");
-                } else if (!e.target.closest(".select")) {
+                    selectOptions.removeAttribute("hidden");
+                } else if (e.target !== select.querySelector(".select__input") && !e.target.closest(".select__option")) {
                     select.classList.remove("_active");
                     button.classList.remove("_hidden");
                 }
