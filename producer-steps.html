@@ -5,7 +5,7 @@
 	<title>ProducerSteps</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230117023827">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230124173239">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -24,40 +24,58 @@
 									an option» button every time you want to add a country.
 								</div>
 								<button type="button" class="option-select__button">Select an option</button>
-								<select name="form[countriesTargeting]" data-class-modif="form" multiple data-tags=".option-select__items-countries-targeting" data-search data-checkbox data-scroll="250">
-									<option value="" selected>Search</option>
-									<option value="1">Afghanistan</option>
-									<option value="2">Algeria</option>
-									<option value="3">Angola</option>
-									<option value="4">Andorra</option>
-									<option value="5">Albania</option>
-									<option value="6">Argentina</option>
-									<option value="7">Togo</option>
-									<option value="8">Israel</option>
-									<option value="9">Ukraine</option>
-									<option value="10">USA</option>
-								</select>
-								<div class="option-select__items option-select__items-countries-targeting"></div>
+								<div class="popup-container">
+									<div class="popup">
+										<input type="search" id="search" class="search-input" placeholder="Search">
+										<div class="divider"></div>
+										<div class="actions d-flex">
+											<div class="d-flex">
+												<label class="switch">
+													<input type="checkbox" id="toggleCountries">
+													<span class="slider round"></span>
+												</label>
+												<span class="switch-label">Show selected only</span>
+											</div>
+											<div class="clear-all">Clear all</div>
+										</div>
+										<div class="list">
+										</div>
+										<div class="divider"></div>
+										<div class="actions d-flex">
+											<div class="save"><button type="button">Save</button></div>
+										</div>
+									</div>
+								</div>
+								<div class="option-select__items"></div>
 							</div>
 							<div class="form__select-option option-select">
 								<div class="option-select__title">Country you DON’T want to target *</div>
 								<div class="option-select__text">You can select multiple countries, just press “Select
 									an option” button every time you want to add a country.</div>
 								<button type="button" class="option-select__button">Select an option</button>
-								<select name="form[countriesNotTargeting]" data-class-modif="form" multiple data-tags=".option-select__items-countries-nottargeting" data-search data-checkbox data-scroll="250">
-									<option value="" selected>Search</option>
-									<option value="1">Afghanistan</option>
-									<option value="2">Algeria</option>
-									<option value="3">Angola</option>
-									<option value="4">Andorra</option>
-									<option value="5">Albania</option>
-									<option value="6">Argentina</option>
-									<option value="7">Togo</option>
-									<option value="8">Israel</option>
-									<option value="9">Ukraine</option>
-									<option value="10">USA</option>
-								</select>
-								<div class="option-select__items option-select__items-countries-nottargeting"></div>
+								<div class="popup-container">
+									<div class="popup">
+										<input type="search" id="search" class="search-input" placeholder="Search">
+										<div class="divider"></div>
+										<div class="actions d-flex">
+											<div class="d-flex">
+												<label class="switch">
+													<input type="checkbox" id="toggleCountries">
+													<span class="slider round"></span>
+												</label>
+												<span class="switch-label">Show selected only</span>
+											</div>
+											<div class="clear-all">Clear all</div>
+										</div>
+										<div class="list">
+										</div>
+										<div class="divider"></div>
+										<div class="actions d-flex">
+											<div class="save"><button type="button">Save</button></div>
+										</div>
+									</div>
+								</div>
+								<div class="option-select__items"></div>
 							</div>
 							<div class="form__select-option option-select">
 								<div class="option-select__title">Client you are targeting *</div>
@@ -138,19 +156,29 @@
 									option» button every time you want to add a country.</p>
 								<button type="button" class="option-select__button">Select
 									an option</button>
-								<select name="form[products]" data-class-modif="form" multiple data-tags=".option-select__items-products" data-search data-checkbox data-scroll="250">
-									<option value="" selected>Search</option>
-									<option value="1">Organic Ice Cream</option>
-									<option value="2">Chilled Organic Pasta</option>
-									<option value="3">Gluten Free Foods</option>
-									<option value="4">Fruit and Vegetable Powder</option>
-									<option value="5">Raw Ingredients</option>
-									<option value="6">Oat Products</option>
-									<option value="7">Muesli</option>
-									<option value="8">Snails</option>
-									<option value="9">Vinegar</option>
-								</select>
-								<div class="option-select__items option-select__items-products"></div>
+								<div class="popup-container">
+									<div class="popup">
+										<input type="search" id="search" class="search-input" placeholder="Search">
+										<div class="divider"></div>
+										<div class="actions d-flex">
+											<div class="d-flex">
+												<label class="switch">
+													<input type="checkbox" id="toggleCountries">
+													<span class="slider round"></span>
+												</label>
+												<span class="switch-label">Show selected only</span>
+											</div>
+											<div class="clear-all">Clear all</div>
+										</div>
+										<div class="list">
+										</div>
+										<div class="divider"></div>
+										<div class="actions d-flex">
+											<div class="save"><button type="button">Save</button></div>
+										</div>
+									</div>
+								</div>
+								<div class="option-select__items"></div>
 							</div>
 							<div class="form__select-option option-select">
 								<div class="option-select__addfile-items">
@@ -232,7 +260,7 @@
 			</section>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20230117023827"></script>
+	<script src="js/app.min.js?_v=20230124173239"></script>
 </body>
 
 </html>
